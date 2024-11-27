@@ -116,74 +116,7 @@ def projects():
                 
 
 
-        with col1:
-            with st.container(border=True):
-                # Displaying the title of the project
-                st.title("Student Result Management System")
-
-                # Displaying the description
-                st.markdown("""
-                **Description:**
-                Developed a web-based application for managing and displaying student results.Designed an intuitive interface to streamline result generation and access.
-
-                ***Key Features:***
-
-                - **Admin Panel:** Allows administrators to add, edit, and manage student records and grades.
-                - **Student Access:** Enables students to view their results by entering credentials.
-                - **Secure Authentication:** Ensures data security using role-based access controls.
-                - **Dynamic Updates:** Results can be updated or modified in real-time through the admin interface.
-                """)
-                st.markdown(""" """)
-
-
-
-                # Displaying the tools used
-                st.markdown("""
-                ***Tools & Technologies:***
-                - **Frontend:** HTML, CSS, JavaScript for responsive and interactive design.
-                - **Backend:** PHP for server-side processing and MySQL for database management.
-                - **Database:** Structured student and result records stored in MySQL.
-                """)
-                st.markdown(""" """)
-                
-                
-
-                # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/ayushkanha/SRMS)**""")
-
-        with col2:
-            with st.container(border=True):
-                # Displaying the title of the project
-                st.title("E-Pharmacy Website")
-
-                # Displaying the description
-                st.markdown("""
-                **Description:**
-                Designed and developed a comprehensive e-pharmacy platform combining standard online pharmacy features with advanced capabilities like price comparison and location services.Integrated MapmyIndia API to help users locate nearby pharmacies and hospitals with detailed information.
-                ***Key Features:***
-
-                - **Pharmacy Services**: Supports product browsing, searching, and purchasing of medicines and health products.
-                - **Price Comparison**: Compares product prices across multiple platforms to help users find the best deals.
-                - **Location Services**: Displays nearby pharmacies and hospitals on a map with their addresses and contact details.
-                - **Responsive Design**: Built with React for a seamless and intuitive user experience on both desktop and mobile devices.
-                """)
-                st.markdown(""" """)
-
-
-                # Displaying the tools used
-                st.markdown("""
-                ***Tools & Technologies:***
-
-                **Frontend:** React for dynamic and responsive UI development.
-                **Backend:** Python for server-side logic and APIs.
-                **Map Integration:** MapmyIndia API for location-based services.
-                
-                """)
-                st.markdown(""" """)
-
-
-                # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/ayushkanha/E-pharmacy)**""")
+       
 
         with col1:
             with st.container(border=True):
@@ -257,3 +190,71 @@ def projects():
 
        
 
+        with col1:
+            with st.container(border=True):
+                # Displaying the title of the project
+                st.title("Student Result Management System")
+
+                # Displaying the description
+                st.markdown("""
+                **Description:**
+                Developed a web-based application for managing and displaying student results.Designed an intuitive interface to streamline result generation and access.
+
+                ***Key Features:***
+
+                - **Admin Panel:** Allows administrators to add, edit, and manage student records and grades.
+                - **Student Access:** Enables students to view their results by entering credentials.
+                - **Secure Authentication:** Ensures data security using role-based access controls.
+                - **Dynamic Updates:** Results can be updated or modified in real-time through the admin interface.
+                """)
+                st.markdown(""" """)
+
+
+
+                # Displaying the tools used
+                st.markdown("""
+                ***Tools & Technologies:***
+                - **Frontend:** HTML, CSS, JavaScript for responsive and interactive design.
+                - **Backend:** PHP for server-side processing and MySQL for database management.
+                - **Database:** Structured student and result records stored in MySQL.
+                """)
+                st.markdown(""" """)
+                
+                
+
+                # Adding the GitHub link
+                st.markdown("""**[GitHub](https://github.com/ayushkanha/SRMS)**""")
+
+        with col2:
+            with st.container(border=True):
+                # Displaying the title of the project
+                st.title("E-Pharmacy Website")
+
+                # Displaying the description
+                st.markdown("""
+                **Description:**
+                Designed and developed a comprehensive e-pharmacy platform combining standard online pharmacy features with advanced capabilities like price comparison and location services.Integrated MapmyIndia API to help users locate nearby pharmacies and hospitals with detailed information.
+                ***Key Features:***
+
+                - **Pharmacy Services**: Supports product browsing, searching, and purchasing of medicines and health products.
+                - **Price Comparison**: Compares product prices across multiple platforms to help users find the best deals.
+                - **Location Services**: Displays nearby pharmacies and hospitals on a map with their addresses and contact details.
+                - **Responsive Design**: Built with React for a seamless and intuitive user experience on both desktop and mobile devices.
+                """)
+                st.markdown(""" """)
+
+
+                # Displaying the tools used
+                st.markdown("""
+                ***Tools & Technologies:***
+
+                **Frontend:** React for dynamic and responsive UI development.
+                **Backend:** Python for server-side logic and APIs.
+                **Map Integration:** MapmyIndia API for location-based services.
+                
+                """)
+                st.markdown(""" """)
+
+
+                # Adding the GitHub link
+                st.markdown("""**[GitHub](https://github.com/ayushkanha/E-pharmacy)**""")
