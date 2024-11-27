@@ -74,7 +74,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Get the base64 string of the image
-logo_base64 = get_base64_image("ayush.jpg")
+logo_base64 = get_base64_image("ayush.jpeg")
 
 # Logo styling
 logo_html = f"""
