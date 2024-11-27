@@ -40,19 +40,16 @@ def projects():
 
 
                 # Displaying the title of the project
-                st.title("Insightful Data Explorer")
+                st.title("Movies Recommendation System")
 
                 # Displaying the description
                 st.markdown("""
                 **Description:**
-                The Insightful Data Explorer is a Streamlit-based application designed for comprehensive data analysis and machine learning tasks. Key features include:
-        
-                - **Data Handling:** Upload, edit, and preprocess CSV or Excel files.
-                - **Chat with Data:** Interactive data exploration using Google Gemini-1.5-Flash-Latest.
-                - **Visualization:** Custom and automated chart generation.
-                - **Feature Engineering:** Transform and create new features, handle missing values and outliers.
-                - **AutoML:** Automated model selection, training, and optimization for various machine learning tasks with PyCaret.
-                - **Data Profiling:** Detailed data profiling using YData Profiling.
+                Built a recommendation engine that suggests movies based on the user's watched history.Integrated TMDB Dataset and API to fetch detailed movie information and high-quality images.Deployed the application on Streamlit Cloud for easy access and interaction. Key features include:
+                - **Personalized Recommendations:** Suggests movies based on user preferences, genres, and popularity.
+                - **Enhanced User Experience:** Displays movie posters and details (like release date, rating, and overview) using TMDB API.
+                - **Collaborative Filtering:** Employs advanced techniques like cosine similarity to provide accurate suggestions.
+                - **Interactive Interface:** Allows users to input their favorite movies and receive tailored recommendations.
                 """)
 
                 # Displaying the tools used
@@ -62,31 +59,22 @@ def projects():
                  **Python** ,
                  **Pandas**,
                 **Streamlit** ,
-                **Google Gemini**, 
-                **PyCaret**, 
-                **PygWalker**, 
-                **AutoViz**, 
-                **YData Profiling**, 
+                **TMDB Dataset and API**, 
                 """)
                 st.markdown(""" """)
 
 
-                c1,c2,c3,c4 = st.columns(4)
-                c1.markdown("""**[Link to app](https://insightful-data-explorer-001.streamlit.app)**  """)
-                c2.markdown("""**[GitHub](https://github.com/archanags001/Insightful-Data-Explorer)**""")
-                c3.markdown("""**[LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7220172770226102272/)** """)
-                c4.markdown("""**[X](https://x.com/streamlit/status/1814406829075542029)**""")
-                rc1,rc2 = st.columns(2)
-                rc1.markdown("""**[Streamlit community](https://buff.ly/3WqhYiB)**""")
-                rc2.markdown("""**[YouTube](https://www.youtube.com/watch?v=dwlE4p2uF6k)**""")
-
+                c1,c2 = st.columns(2)
+                c1.markdown("""**[Link to app](https://movie-recommendation-ayush.streamlit.app/)**  """)
+                c2.markdown("""**[GitHub](https://github.com/ayushkanha/Movie_recommendation)**""")
+                
 
         with col2:
             with st.container(border=True):
                 st.markdown(""" """)
                 
                 # Displaying the title of the project
-                st.title("InsightBot")
+                st.title("Whatsapp Chat Analysis")
                 st.markdown(""" """)
                 st.markdown(""" """)
 
@@ -94,15 +82,16 @@ def projects():
                 # Displaying the description
                 st.markdown("""
                 **Description:**
-                InsightBot is a tool that allows users to chat with their data using Google Gemini-1.5-Flash-Latest. It offers features such as:
-
-                - **Data Interaction:** Chat with your data for interactive analysis.
-                - **Sample Datasets:** Provides sample datasets for users to explore if they don't have their own data.
+                The Insightful Data Explorer is a Streamlit-based application designed for Extracts meaningful insights such as user activity, sentiment analysis, and word frequency. Key features include:
+                
+                - **Chat Statistics:** Provides insights like total messages, media shared, and participant activity.
+                - **Interactive Visualizations:** Utilized Matplotlib and Seaborn to create visually appealing charts and graphs.
+                - **Keyword Analysis:** Highlights the most used words and emojis in the conversation.
+                - **Sentiment Analysis:** Determines the overall tone of the chats using natural language processing techniques.
+                - **Customizable Uploads:** Allows users to upload their chat export files for personalized analysis.
+                
                 """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
+                
 
 
                 # Displaying the tools used
@@ -110,27 +99,18 @@ def projects():
                 **Tools Used:**
 
                 **Python**, 
-                **Streamlit**,  **Google Gemini**, **Pandas**
+                **Streamlit**,  **Plotly**, **Pandas**
                 
                 """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
+               
                 st.markdown(""" """)
 
 
                 c1, c2 = st.columns(2)
-                c1.markdown("""**[Link to app](https://chat-with-data-gemini.streamlit.app)**  """)
-                c2.markdown("""**[GitHub](https://github.com/archanags001/InsightBot)**""")
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
+                c1.markdown("""**[Link to app](https://whatsapp-analysis-ayush-projects.streamlit.app/)**  """)
+                c2.markdown("""**[GitHub](https://github.com/ayushkanha/Whatsapp-Analysis)**""")
+                
+               
                 
                 
                 
@@ -139,18 +119,19 @@ def projects():
         with col1:
             with st.container(border=True):
                 # Displaying the title of the project
-                st.title("California Housing Price Prediction")
+                st.title("Student Result Management System")
 
                 # Displaying the description
                 st.markdown("""
                 **Description:**
-                The California Housing Price Prediction project aims to predict housing prices in California using machine learning. It includes:
+                Developed a web-based application for managing and displaying student results.Designed an intuitive interface to streamline result generation and access.
 
-                - **Data Preprocessing:** Cleaning and preparing the dataset.
-                - **Exploratory Data Analysis (EDA):** Visualizing data patterns.
-                - **Feature Engineering:** Creating new features to enhance model performance.
-                - **Model Training and Evaluation:** Implementing and assessing various regression algorithms, including Linear Regression, Decision Tree Regression, and Random Forest Regression.
-                - **Hyperparameter Tuning:** Optimizing model parameters for accuracy.
+                ***Key Features:***
+
+                - **Admin Panel:** Allows administrators to add, edit, and manage student records and grades.
+                - **Student Access:** Enables students to view their results by entering credentials.
+                - **Secure Authentication:** Ensures data security using role-based access controls.
+                - **Dynamic Updates:** Results can be updated or modified in real-time through the admin interface.
                 """)
                 st.markdown(""" """)
 
@@ -158,54 +139,58 @@ def projects():
 
                 # Displaying the tools used
                 st.markdown("""
-                **Tools Used:**
-
-                **Python**, **Pandas**,  **NumPy**, **Matplotlib**,  **Seaborn**, **Scikit-learn**
+                ***Tools & Technologies:***
+                - **Frontend:** HTML, CSS, JavaScript for responsive and interactive design.
+                - **Backend:** PHP for server-side processing and MySQL for database management.
+                - **Database:** Structured student and result records stored in MySQL.
                 """)
                 st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
+                
                 
 
                 # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/ml_projects/blob/main/California_Housing_Price_Prediction.ipynb)**""")
+                st.markdown("""**[GitHub](https://github.com/ayushkanha/SRMS)**""")
 
         with col2:
             with st.container(border=True):
                 # Displaying the title of the project
-                st.title("Tensor Creation and Neural Network Performance")
+                st.title("E-Pharmacy Website")
 
                 # Displaying the description
                 st.markdown("""
                 **Description:**
-                This project involves four parts:
+                Designed and developed a comprehensive e-pharmacy platform combining standard online pharmacy features with advanced capabilities like price comparison and location services.Integrated MapmyIndia API to help users locate nearby pharmacies and hospitals with detailed information.
+                ***Key Features:***
 
-                - **Tensor Creation:** Develop a Python class to construct a tensor from given data and shape inputs using nested lists, managing excess data or padding as necessary.
-                - **Neural Network:** Build a fully-connected neural network to classify MNIST digits.
-                - **Dense Layer Class:** Implement a dense layer class with a forward() method to process input, weight, and bias tensors for forward propagation.
-                - **Performance Comparison:** Compare the performance of the neural network from Part 2 with the dense layer implementation from Part 3.
+                - **Pharmacy Services**: Supports product browsing, searching, and purchasing of medicines and health products.
+                - **Price Comparison**: Compares product prices across multiple platforms to help users find the best deals.
+                - **Location Services**: Displays nearby pharmacies and hospitals on a map with their addresses and contact details.
+                - **Responsive Design**: Built with React for a seamless and intuitive user experience on both desktop and mobile devices.
                 """)
                 st.markdown(""" """)
 
 
                 # Displaying the tools used
                 st.markdown("""
-                **Tools Used:**
+                ***Tools & Technologies:***
 
-                **Python** , **NumPy**, **TensorFlow**, **Keras**,  **Matplotlib**
+                **Frontend:** React for dynamic and responsive UI development.
+                **Backend:** Python for server-side logic and APIs.
+                **Map Integration:** MapmyIndia API for location-based services.
+                
                 """)
                 st.markdown(""" """)
 
 
                 # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/coding_challenge/blob/main/Coding_challenge_.ipynb)**""")
+                st.markdown("""**[GitHub](https://github.com/ayushkanha/E-pharmacy)**""")
 
         with col1:
             with st.container(border=True):
                 st.markdown(""" """)
 
                 # Displaying the title of the project
-                st.title("Multiple LSTMs")
+                st.title("Password Manager App")
                 st.markdown(""" """)
                 
 
@@ -214,108 +199,30 @@ def projects():
                 # Displaying the description
                 st.markdown("""
                 **Description:**
-                The "Multiple LSTMs" project focuses on building and comparing multiple Long Short-Term Memory (LSTM) models for time series forecasting. The project involves:
+                Developed a secure and user-friendly password manager application using Python.Implemented Fernet encryption, a symmetric key encryption algorithm, to ensure data security.Integrated MongoDB Atlas for scalable and reliable data storage.
+               **Key Features:**
 
-                - **Data Preparation:** Loading and preprocessing time series data.
-                - **LSTM Model Implementation:** Creating and training multiple LSTM models.
-                - **Model Evaluation:** Comparing the performance of the LSTM models.
-                - **Visualization:** Plotting results to visualize model performance.
+               - **Password Storage:** Safely stores passwords for multiple accounts with encryption.
+               - **Encryption/Decryption:** Encrypts passwords using the Fernet algorithm and decrypts them on demand.
+               - **User-Friendly Interface:** Built an interactive GUI with Tkinter for easy navigation and usability.
+               - **Cross-Platform Support:** Ensures compatibility across various operating systems.
                 """)
                 st.markdown(""" """)
-                st.markdown(""" """)
-                
-
 
                 # Displaying the tools used
                 st.markdown("""
-                **Tools Used:**
+                **Tools & Technologies:**
 
-                **Python**,
-                **TensorFlow**, **Keras**, 
-                **NumPy**, 
-                **Matplotlib**,
+                - **Frontend:** Custom Tkinter library for building the graphical user interface.
+                - **Encryption:** Fernet (from Python’s Cryptography library) for secure data handling.
+                - **Database:** MongoDB Atlas for storing encrypted data with high availability and scalability.
                 """)
                 
                 st.markdown(""" """)
-                st.markdown(""" """)
-
-
-
-
                 # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/coding_challenge/blob/main/Multiple_LSTMs.ipynb)**""")
+                st.markdown("""**[GitHub](https://github.com/ayushkanha/Passsword-manager)**""")
                 st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-
-
-        with col2:
-            with st.container(border=True):
-
-                # Displaying the title of the project
-                st.title("TensorFlow Projects")
-
-                # Displaying the description
-                st.markdown("""
-                **Description:**
-                The git repository contains various TensorFlow projects and notebooks, each addressing different machine learning tasks. Highlights include:
-
-
-                - **Callbacks_TensorFlow_MNIST:** Demonstrates using callbacks to improve MNIST digit classification.
-                - **Convolution_NN_mnist:** Implements a convolutional neural network for MNIST classification.
-                - **Happy_or_sad:** A model to classify images as happy or sad.
-                - **Improve_MNIST_with_Convolutions:** Enhances MNIST classification using convolutional layers.
-                - **Sign_Language_MNIST:** Classifies sign language digits using a neural network.
-                - **Training_Validation_with_ImageDataGenerator:** Explores data augmentation techniques.
-                - **Multiclass_Classifier:** Implements a multiclass classification model.
-                """)
-
-                # Displaying the tools used
-                st.markdown("""
-                **Tools Used:**
-
-                **Python**, 
-                **TensorFlow**, **Keras**, 
-                **NumPy**, 
-                **Matplotlib**,
-                """)
-                st.markdown(""" """)
-
-
-                # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/tensorflow)**""")
-
-        with col1:
-            with st.container(border=True):
-                # Displaying the title of the project
-                st.title("Recommendation System Using Pearson Correlation and Cosine Similarity")
-
-                # Displaying the description
-                st.markdown("""
-                **Description:**
-                This project implements a recommendation system using two different similarity metrics: Pearson Correlation and Cosine Similarity. The key tasks include:
-
-                - **Data Preparation:** Loading and preprocessing the dataset.
-                - **Pearson Correlation:** Calculating similarity between users/items using Pearson correlation.
-                - **Cosine Similarity:** Calculating similarity between users/items using cosine similarity.
-                - **Recommendation Generation:** Generating recommendations based on the computed similarities.
-                """)
-
-                # Displaying the tools used
-                st.markdown("""
-                **Tools Used:**
-
-                **Python**,
-                **Pandas**,  **NumPy**, 
-                **Matplotlib**,
-                """)
-                st.markdown(""" """)
-
-
-                # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/coding_challenge/blob/main/recommendation_Pearson_correlation_and_Cosine_similarity__.ipynb)**""")
-                st.markdown(""" """)
+        
         with col2:
             with st.container(border=True):
                 # Displaying the title of the project
@@ -330,7 +237,6 @@ def projects():
                 - **Resume Page:** A viewable and downloadable resume for quick access to detailed professional information.
                 - **Experience Page:** An organized display of work experience, skills, and accomplishments.
                 - **Projects Page:** A showcase of notable projects, including descriptions, technologies used, and links to repositories.
-                - **Testimonial Page:** A collection of feedback and testimonials from clients and colleagues, highlighting accomplishments and collaborations.
                 - **Contact Page:** An integrated contact form for easy communication and inquiries.
                 """)
 
@@ -342,61 +248,12 @@ def projects():
                 """)
                 st.markdown(""" """)
 
-                c1, c2, c3, c4, c5 = st.columns(5)
+                c1, c2 = st.columns(2)
 
 
                 # Adding the GitHub link
-                c1.markdown("""**[Link to app](https://portfolio-archana.streamlit.app)**  """)
-                c2.markdown("""**[GitHub](https://github.com/archanags001/Portfolio/tree/main)**""")
+                c1.markdown("""**[Link to app](https://github.com/ayushkanha/potfolio)**  """)
+                c2.markdown("""**[GitHub](https://potfolio-ayush.streamlit.app/)**""")
 
-        with col1:
-            with st.container(border=True):
-                st.markdown(""" """)
-                st.markdown(""" """)
-                # Displaying the title of the project
-                st.title("Object Detection with YOLO")
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-                # Displaying the description
-                st.markdown("""
-                **Description:**
-                The Object Detection project utilizes YOLO (You Only Look Once) to identify and classify objects within images efficiently. Key features include:
-
-                - **Data Preparation:** Methods for preparing and preprocessing datasets tailored for YOLO object detection.
-                - **Model Development:** Implementation of YOLO-based object detection models for real-time performance.
-                - **Evaluation:** Techniques for assessing model accuracy and effectiveness, including visualizations of detection results.
-                - **Application:** Demonstrations of applying the trained YOLO model to various images for accurate object detection.
-                """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-                # Displaying the tools used
-                st.markdown("""
-                **Tools Used:**
-
-                **Python**, **YOLO (You Only Look Once)** , **OpenCV**  , **Matplotlib**
-                """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-                # Adding the GitHub link
-                st.markdown("""**[GitHub](https://github.com/archanags001/ml_projects/blob/main/object_detection.pdf)**""")
-                st.markdown(""" """)
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-
-        with col2:
-            with st.container(border=True):
-                # Displaying the title of the project
-                st.title("Multimodal Biometric and Multi-Attack Protection Using Image Features")
-
-                st.markdown("""
-                **Description:** Multimodal biometrics is an integration of two or more biometric systems. It overcomes the limitations of other biometrics system like unimodal biometric system. Multimodal biometric for fake identity detection using image features uses three biometric patterns and they are iris, face, and fingerprint. In this system user chooses two biometric patterns as input, which will be fused. Gaussian filter is used to smooth this fused image. Smoothed version of input image and input image is compared using image quality assessment to extract image features. In this system different image quality measures are used for feature extraction. Extracted image features are used by artificial neural network to classify an image as real or fake. Depending on whether image is real or fake appropriate action is taken. Actions could be showing user identification on screen if image is classified as real or raising an alert if image is classified as fake. This system can be used in locker, ATM and other areas where personal identification is required.""")
-
-                # Displaying the published paper link
-                st.markdown("""
-                **Published Paper:** [Multimodal Biometric and Multi-Attack Protection Using Image Features](http://pnrsolution.org/Datacenter/Vol3/Issue2/140.pdf)
-                """)
+       
 
