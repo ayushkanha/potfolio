@@ -5,7 +5,6 @@ from streamlit_lottie import st_lottie
 def projects():
     col1, col2 = st.columns(2)
 
-    # col1.markdown("## Experience")
     with col1:
         st.markdown("""
                 <style>
@@ -13,111 +12,117 @@ def projects():
                     display: flex;
                     align-items: center;
                     height: 100%;
-                    margin-top: 200px; /* Adjust this value as needed */
+                    margin-top: 200px;
                 }
                 </style>
                 <div class="centered">
                     <h2>Projects </h2>
                 </div>
             """, unsafe_allow_html=True)
+
     path = "Animation - 1732430682998.json"
     with open(path, "r") as file:
         url = json.load(file)
     with col2:
-        st_lottie(url,
-                  reverse=True,
-                  height=400,
-                  width=400,
-                  speed=1,
-                  loop=True,
-                  quality='high',
-                  )
+        st_lottie(url, reverse=True, height=400, width=400, speed=1, loop=True, quality='high')
 
     with st.container():
-        col1,col2 = st.columns(2)
+        col1, col2 = st.columns(2)
+
+        # Existing Projects (No Changes)
         with col1:
             with st.container(border=True):
-
-
-                # Displaying the title of the project
                 st.title("Movies Recommendation System")
-
-                # Displaying the description
                 st.markdown("""
                 **Description:**
-                Built a recommendation engine that suggests movies based on the user's watched history.Integrated TMDB Dataset and API to fetch detailed movie information and high-quality images.Deployed the application on Streamlit Cloud for easy access and interaction. Key features include:
-                - **Personalized Recommendations:** Suggests movies based on user preferences, genres, and popularity.
-                - **Enhanced User Experience:** Displays movie posters and details (like release date, rating, and overview) using TMDB API.
-                - **Collaborative Filtering:** Employs advanced techniques like cosine similarity to provide accurate suggestions.
-                - **Interactive Interface:** Allows users to input their favorite movies and receive tailored recommendations.
+                Built a recommendation engine that suggests movies based on the user's watched history. Integrated TMDB Dataset and API to fetch detailed movie information and high-quality images. Deployed the application on Streamlit Cloud for easy access and interaction.
+
+                - **Personalized Recommendations**: Suggests movies based on user preferences, genres, and popularity.
+                - **Enhanced User Experience**: Displays movie posters and details (like release date, rating, and overview) using TMDB API.
+                - **Collaborative Filtering**: Uses cosine similarity to provide accurate suggestions.
+                - **Interactive Interface**: Allows users to input their favorite movies and receive tailored recommendations.
                 """)
 
-                # Displaying the tools used
-                st.markdown("""
-                **Tools Used:**
-                
-                 **Python** ,
-                 **Pandas**,
-                **Streamlit** ,
-                **TMDB Dataset and API**, 
-                """)
-                st.markdown(""" """)
-
-
-                c1,c2 = st.columns(2)
-                c1.markdown("""**[Link to app](https://movie-recommendation-ayush.streamlit.app/)**  """)
-                c2.markdown("""**[GitHub](https://github.com/ayushkanha/Movie_recommendation)**""")
-                
+                st.markdown("**Tools Used:** Python, Pandas, Streamlit, TMDB Dataset and API")
+                c1, c2 = st.columns(2)
+                c1.markdown("**[Link to app](https://movie-recommendation-ayush.streamlit.app/)**")
+                c2.markdown("**[GitHub](https://github.com/ayushkanha/Movie_recommendation)**")
 
         with col2:
             with st.container(border=True):
-                st.markdown(""" """)
-                
-                # Displaying the title of the project
-                st.title("Whatsapp Chat Analysis")
-                st.markdown(""" """)
-                st.markdown(""" """)
-
-
-                # Displaying the description
+                st.title("WhatsApp Chat Analysis")
                 st.markdown("""
                 **Description:**
-                The Insightful Data Explorer is a Streamlit-based application designed for Extracts meaningful insights such as user activity, sentiment analysis, and word frequency. Key features include:
-                
-                - **Chat Statistics:** Provides insights like total messages, media shared, and participant activity.
-                - **Interactive Visualizations:** Utilized Matplotlib and Seaborn to create visually appealing charts and graphs.
-                - **Keyword Analysis:** Highlights the most used words and emojis in the conversation.
-                - **Sentiment Analysis:** Determines the overall tone of the chats using natural language processing techniques.
-                - **Customizable Uploads:** Allows users to upload their chat export files for personalized analysis.
-                
+                A Streamlit-based application that extracts meaningful insights such as user activity, sentiment analysis, and word frequency from WhatsApp chat data.
+
+                - **Chat Statistics**: Provides insights like total messages, media shared, and participant activity.
+                - **Interactive Visualizations**: Uses Matplotlib and Seaborn to create visually appealing charts and graphs.
+                - **Keyword Analysis**: Highlights the most used words and emojis.
+                - **Sentiment Analysis**: Determines the overall tone of chats using NLP techniques.
+                - **Customizable Uploads**: Allows users to upload chat export files for personalized analysis.
                 """)
-                
 
-
-                # Displaying the tools used
-                st.markdown("""
-                **Tools Used:**
-
-                **Python**, 
-                **Streamlit**,  **Plotly**, **Pandas**
-                
-                """)
-               
-                st.markdown(""" """)
-
-
+                st.markdown("**Tools Used:** Python, Streamlit, Plotly, Pandas")
                 c1, c2 = st.columns(2)
-                c1.markdown("""**[Link to app](https://whatsapp-analysis-ayush-projects.streamlit.app/)**  """)
-                c2.markdown("""**[GitHub](https://github.com/ayushkanha/Whatsapp-Analysis)**""")
-                
-               
-                
-                
-                
+                c1.markdown("**[Link to app](https://whatsapp-analysis-ayush-projects.streamlit.app/)**")
+                c2.markdown("**[GitHub](https://github.com/ayushkanha/Whatsapp-Analysis)**")
 
+        # New Projects
+        with col1:
+            with st.container(border=True):
+                st.title("Vendor Analysis Dashboard")
+                st.markdown("""
+                **Description:**
+                Developed a vendor analysis tool to track and evaluate vendor performance based on sales, pricing trends, and reliability.
 
-       
+                - **Performance Metrics**: Tracks vendor reliability, sales volume, and delivery time efficiency.
+                - **Price Comparisons**: Compares product prices across different vendors to identify the best deals.
+                - **Interactive Data Visualization**: Provides dynamic dashboards using Power BI and Python.
+                - **Trend Analysis**: Identifies patterns in vendor performance over time.
+                """)
 
+                st.markdown("**Tools Used:** Python, Pandas, Streamlit, SQL")
+                c1.markdown("""**[Link to app](https://vendoranalytics.streamlit.app/)**  """)
+                st.markdown("**[GitHub](https://github.com/ayushkanha/Vendor_analytics)**")
+
+        with col2:
+            with st.container(border=True):
+                st.title("Speech-to-Speech Translator")
+                st.markdown("""
+                **Description:**
+                A real-time speech translation application that converts spoken words from one language to another.
+
+                - **Speech Recognition** : Converts speech into text using Google Speech Recognition API from mic, uploaded audio, or text input.
+                - **Language Translation** : Translates text into multiple languages using GoogleTranslator for seamless communication.
+                - **Text-to-Speech** : Converts translated text into speech using gTTS, providing an audio output.
+                - **Real-Time Processing** : Ensures low-latency transcription, translation, and speech synthesis for smooth interaction.
+                - **Sentiment Analysis** : Analyzes sentiment using Hugging Face Transformers and classifies text into five categories.
+                - **User-Friendly UI** : Built with Streamlit, featuring an interactive interface with custom-styled elements.
+                """)
+
+                st.markdown("**Tools Used:** Python, Hugging Face, Google Speech API, Streamlit")
+                c1, c2 = st.columns(2)
+                c1.markdown("""**[Link to app](https://speech-speech-ayush.streamlit.app/)**  """)
+                c1.markdown("**[GitHub](https://github.com/ayushkanha/Translate-speach)**")
+
+        with col1:
+            with st.container(border=True):
+                st.title("E-Pharmacy Price Comparison System")
+                st.markdown("""
+                **Description:**
+                Developed a price comparison platform that fetches and compares product prices across multiple e-commerce websites.
+
+                - **Medicine Price Comparison** : Fetches and compares medicine prices from various online vendors using SerpAPI.
+                - **Best Price Selection** : Identifies and highlights the lowest-priced option among available vendors.
+                - **Vendor Analysis** : Displays price variations across different sellers with detailed breakdowns.
+                - **Interactive UI** : Streamlit-based interface for an intuitive and user-friendly experience.
+                - **Data Visualization** : Provides bar and pie charts for easy comparison of price differences.
+                - **Direct Purchase Links** : Offers clickable links to buy medicines directly from vendors.
+                """)
+
+                st.markdown("**Tools Used:** Python, Streamlit, SerpAPI, Pandas, Matplotlib ")
+                c1.markdown("""**[Link to app](https://pricecompair.streamlit.app/)**  """)
+                st.markdown("**[GitHub](https://github.com/ayushkanha/price_compair)**")
         with col1:
             with st.container(border=True):
                 st.markdown(""" """)
@@ -153,6 +158,7 @@ def projects():
                 
                 st.markdown(""" """)
                 # Adding the GitHub link
+                
                 st.markdown("""**[GitHub](https://github.com/ayushkanha/Passsword-manager)**""")
                 st.markdown(""" """)
         
@@ -185,9 +191,8 @@ def projects():
 
 
                 # Adding the GitHub link
-                c1.markdown("""**[Link to app](https://github.com/ayushkanha/potfolio)**  """)
-                c2.markdown("""**[GitHub](https://potfolio-ayush.streamlit.app/)**""")
-
+                c1.markdown("""**[Link to app](https://potfolio-ayush.streamlit.app/)**  """)
+                c2.markdown("""**[GitHub](https://github.com/ayushkanha/potfolio)**""")
        
 
         with col1:
