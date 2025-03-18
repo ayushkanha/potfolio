@@ -9,27 +9,16 @@ from experience_page import experience
 from project_page import projects
 from contact_form import contact
 
- # Page setup
+# Page setup
 st.set_page_config(
     page_title="Ayush",
     page_icon="📋",
     layout="wide",
 )
 
-
-def gradient(color1, color2, color3, content1, content2):
-    st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
-                f'<span style="color:{color3};">{content1}</span><br>'
-                f'<span style="color:white;font-size:17px;">{content2}</span></h1>',
-                unsafe_allow_html=True)
 def aboutMe():
     col1, col2 = st.columns(2)
-    full_name = "Ayush Kumar Sahu"
-    info = {'Intro': "Data scientist"}
-
     with col1:
-        st.markdown("<h2 style='text-align: center; '>Hello! I'm Ayush 👋</h2>", unsafe_allow_html=True)
-
         st.markdown("""
         <style>
         .center-text {
@@ -47,36 +36,22 @@ def aboutMe():
         Let’s connect and collaborate on projects that make a difference!
         </div>
         """, unsafe_allow_html=True)
-        c1,c2 =st.columns(2)
-        c1.markdown("""**[GitHub](https://github.com/ayushkanha)**""")
-        c2.markdown("""**[LinkedIn](https://linkedin.com/in/ayush-kumar-sahu-299b8b23b)** """)
-      
+
+        c1, c2 = st.columns(2)
+        c1.markdown("""<a href="https://github.com/ayushkanha" target="_blank" style="text-decoration:none;"><button style="background-color:#6C63FF;color:white;padding:10px 15px;border:none;border-radius:5px;cursor:pointer;">GitHub</button></a>""", unsafe_allow_html=True)
+        c2.markdown("""<a href="https://linkedin.com/in/ayush-kumar-sahu-299b8b23b" target="_blank" style="text-decoration:none;"><button style="background-color:#0077B5;color:white;padding:10px 15px;border:none;border-radius:5px;cursor:pointer;">LinkedIn</button></a>""", unsafe_allow_html=True)
+    
     path = "Animation_blue_robo.json"
     with open(path, "r") as file:
         url = json.load(file)
     with col2:
+        st_lottie(url, height=400, width=400, speed=1, loop=True, quality='high')
 
-        st_lottie(url,
-                  reverse=True,
-                  height=400,
-                  width=400,
-                  speed=1,
-                  loop=True,
-                  quality='high',
-                  )
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-# Get the base64 string of the image
-logo_base64 = get_base64_image("ayush.jpeg")
-
-# Logo styling
+logo_base64 = get_base64_image("ayush_pp.jpeg")
 logo_html = f"""
     <style>
     .logo-container {{
@@ -85,10 +60,15 @@ logo_html = f"""
         margin-bottom: 20px;
     }}
     .logo {{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         object-fit: cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }}
+    .sidebar-links a:hover {{
+        color: #6C63FF;
+        font-weight: bold;
     }}
     </style>
     <div class="logo-container">
@@ -96,13 +76,9 @@ logo_html = f"""
     </div>
 """
 
-# Display logo in the sidebar
 st.sidebar.markdown(logo_html, unsafe_allow_html=True)
 with st.sidebar:
-    # Other sidebar elements
-    # st.sidebar.image("logo_image.png", width=200, use_column_width=True)
-    # Option menu in sidebar
-    pages = ["About me", "Resume", "Experience",  "Projects","Contact"]
+    pages = ["About me", "Resume", "Experience",  "Projects", "Contact"]
     nav_tab_op = option_menu(
         menu_title="Ayush",
         options=pages,
@@ -110,10 +86,9 @@ with st.sidebar:
         menu_icon="cast",
         default_index=0,
     )
-# Main content of the app
+
 if nav_tab_op == "About me":
     aboutMe()
-
 elif nav_tab_op == "Resume":
     resume()
 elif nav_tab_op == "Experience":
@@ -122,5 +97,3 @@ elif nav_tab_op == "Projects":
     projects()
 elif nav_tab_op == "Contact":
     contact()
-
-
